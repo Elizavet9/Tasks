@@ -4,19 +4,13 @@
 А месяцев?
 */
 import java.util.*;
-
 public class Main {
-    public static void main(String[] args) {
-      
+    public static void main(String[] args) {      
       int day = 234;
-    
       int week = day / 7;          
       System.out.println(week);    // 33
-      
       int month = day / 30;
       System.out.println(month);   // 7
-    
-      
   }
 }
 
@@ -29,20 +23,15 @@ c.сумму его цифр;
 d.произведение его цифр.
 */
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
-            
       int n = 39;
-      
       int d = n / 10;          
       System.out.println(d);    // 3
-      
       int e = n % 10;
       System.out.println(e);   // 9      
       System.out.println("Сумма цифр числа "+ n +" равна " + (d + e));   // 12
       System.out.println("Произведение цифр числа "+ n +" равна " + (d * e));   // 27
-      
   }
 }
 
@@ -57,19 +46,15 @@ public class Main {
 */
 import java.util.*;
 import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-      
+    public static void main(String[] args) { 
      Scanner sc = new Scanner(System.in);
       double C = sc.nextDouble();
       double F = C * 1.8 + 32;
-      double K = C + 273.15;
-      
+      double K = C + 273.15; 
       System.out.println("Температура по шкале Цельсия - " + C);
       System.out.println("Температура по шкале Фаренгейта - " + F);
       System.out.println("Температура по шкале Кельвина - " + K);
-      
   }
 }
 
@@ -79,24 +64,19 @@ public class Main {
 2.уместится ли квадрат в круге?
 */
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
-      
       double Scircle = 100.0;
       double Ssquare = 60.0;
-      
       double Dcircle = 2 * Math.sqrt(Scircle / Math.PI);   // Диаметр круга
       double Asquare = Math.sqrt(Ssquare);                 // Сторана квадрата
       double Dsquare = Math.sqrt(2 * Ssquare);             // Диагональ квадрата
-      
       if (Dcircle <= Asquare){
          System.out.println("Круг уместится в квадрат");
          }
           else {
               System.out.println("Круг не уместится в квадрат");  
-              }
-      
+              }  
       if (Dsquare <= Dcircle){
         System.out.println("Квадрат уместится в круг");
         }
@@ -112,14 +92,11 @@ public class Main {
 */
 import java.util.*;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-      
     Scanner sc = new Scanner(System.in);
     int n1 = sc.nextInt();
     int n2 = sc.nextInt();
-    
     if (Math.abs(n1) > Math.abs(n2)){
       n1 = n1 / 2;
       System.out.println(n1);
@@ -127,7 +104,6 @@ public class Main {
       else {
         System.out.println("Первое число меньше второго введенного числа!");
       }
-     
   }
 }
 
@@ -143,13 +119,10 @@ public class Main {
 */
 import java.util.*;
 import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-      
+    public static void main(String[] args) { 
     Scanner sc = new Scanner(System.in);
     int w = sc.nextInt();
-    
     if(w <= 30) System.out.println("Неправильный вес!");
     else { 
         if(w >= 75){
@@ -160,8 +133,7 @@ public class Main {
               if (w >= 60) System.out.println("Средний вес!");
               else System.out.println("Легкий вес!");  
              }
-      }
-        
+      }     
   }
 }
 
@@ -171,10 +143,8 @@ public class Main {
 */
 import java.util.*;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-      
     Scanner sc = new Scanner(System.in);
     int day = sc.nextInt();
     switch(day){
@@ -203,7 +173,5 @@ public class Main {
         System.out.println("Нет такого дня недели!");
       break;  
     }
- 
   }
 }
-
